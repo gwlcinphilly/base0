@@ -1,0 +1,10 @@
+{
+    "modules" : ["Appbasic"],
+    "Appbasic" : {
+        "name" : "APPBASIC_EXCEPTION_DICT",
+        "exceptions" : {
+            201 : "input missing requried input"
+        }
+    }
+    
+}
