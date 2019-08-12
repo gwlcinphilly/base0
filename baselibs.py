@@ -89,8 +89,8 @@ class Appbasic:
     """Basic class for AppBasic class,handle common things"""
 
     def __init__(self, name):
-        self.log = get_log()
         self.appname = name
+        self.log = get_log()
 
     def __str__(self):
         return self.appname
