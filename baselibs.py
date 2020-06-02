@@ -68,6 +68,9 @@ def timecounter(ptime=None, timeformat=None, delay=None):
         elif timeformat == "filename":
             isostring = datetime.datetime.now().isoformat().split('.')[0].split("T")
             returnvalue = isostring[0]+"_"+"".join(isostring[1].split(":"))
+        elif timeformat == "date":
+            isostring = datetime.datetime.now().isoformat().split('.')[0].split("T")
+            returnvalue = isostring[0]
     else:
         ctime = time()
         returnvalue = ctime-ptime
